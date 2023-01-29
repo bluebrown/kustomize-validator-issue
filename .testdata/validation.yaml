@@ -1,0 +1,9 @@
+apiVersion: bluebrown.github.io/v1alpha1
+kind: TestValidator
+metadata:
+  name: validation
+  annotations:
+    config.kubernetes.io/local-config: "true"
+    config.kubernetes.io/function: |
+      container:
+        image: bluebrown/test-validator
